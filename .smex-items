@@ -1,0 +1,22 @@
+
+;; ----- smex-history -----
+(
+ package-list-packages
+ menu-bar-mode
+ customize-face
+ global-linum-mode
+ set-cursor-color
+ cd
+ 5x5
+)
+
+;; ----- smex-data -----
+(
+ (set-cursor-color . 2)
+ (global-linum-mode . 1)
+ (evil-mode . 2)
+ (customize-face . 1)
+ (package-list-packages . 3)
+ (evil-paredit-mode . 1)
+ (menu-bar-mode . 1)
+)
