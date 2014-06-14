@@ -1,5 +1,3 @@
-;; This is where your customizations should live
-
 ;; env PATH
 (defun set-exec-path-from-shell-PATH ()
   (let ((path-from-shell (shell-command-to-string "$SHELL -i -c 'echo $PATH'")))
@@ -26,6 +24,7 @@
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
+;; TODO: Not sure that the next line is needed.
 (add-to-list 'load-path "~/.emacs.d/elpa")
 
 ;; get rid of need to type out whole "yes" or "no" words
@@ -96,7 +95,7 @@
        (t (setq unread-command-events (append unread-command-events
                           (list evt))))))))
 
-;; (global-linum-mode 1) ; show me some line nums pl0x
+(global-linum-mode 1) ; show me some line nums pl0x
 
 ;; Adjust paredit to my evil ways
 (add-to-list 'load-path "~/.emacs.d/elpa/evil-paredit-0.0.1")
@@ -108,3 +107,6 @@
 (define-key evil-ex-map "e " 'ido-find-file)
 (define-key evil-ex-map "w " 'ido-write-file)
 (define-key evil-ex-map "b " 'ido-switch-buffer)
+
+; Yeah, I'm lazy...
+(menu-bar-mode t)
