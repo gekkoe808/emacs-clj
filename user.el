@@ -8,7 +8,7 @@
 ;; values in order to set the width (in characters wide) and height
 ;; (in lines high) Emacs will have whenever you start it
 
-(setq initial-frame-alist '((top . 0) (left . 0) (width . 187) (height . 60)))
+(setq initial-frame-alist '((top . 0) (left . 0) (width . 130) (height . 35)))
 
 
 ;; Place downloaded elisp files in this directory. You'll then be able
