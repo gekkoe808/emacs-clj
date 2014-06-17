@@ -120,3 +120,4 @@
 (setq slime-contribs '(slime-fancy))
 ;(slime-setup '(slime-fancy))
 
+(load-file "~/.emacs.d/vendor/emacs-for-python/epy-init.el")
