@@ -53,7 +53,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
 
-(set-face-attribute 'default nil :height 160) ; set font size to 16 points
+(set-face-attribute 'default nil :height 130) ; set font size to 16 points
 
 (load-theme 'tomorrow-night-bright t)
 
@@ -121,3 +121,6 @@
 ;(slime-setup '(slime-fancy))
 
 (load-file "~/.emacs.d/vendor/emacs-for-python/epy-init.el")
+
+(require 'column-enforce-mode)
+(add-hook 'prog-mode-hook 'column-enforce-mode)
