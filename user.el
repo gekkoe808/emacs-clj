@@ -77,7 +77,7 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 
-;; Map jk to escape in Evil's insert mode.
+;; Map kj to escape in Evil's insert mode.
 (define-key evil-insert-state-map "k" #'cofi/maybe-exit)
 (evil-define-command cofi/maybe-exit ()
   :repeat change
