@@ -31,7 +31,7 @@ Face used to dim parentheses." :group (quote starter-kit-faces))
 
 (dolist (mode '(scheme emacs-lisp lisp clojure)) (when (> (display-color-cells) 8) (font-lock-add-keywords (intern (concat (symbol-name mode) "-mode")) '(("(\\|)" quote esk-paren-face)))) (add-hook (intern (concat (symbol-name mode) "-mode-hook")) 'esk-turn-on-paredit) (add-hook (intern (concat (symbol-name mode) "-mode-hook")) 'esk-turn-on-paredit))
 
-(defun esk-pretty-fn nil (font-lock-add-keywords nil `(("(\\(fn\\>\\)" (0 (progn (compose-region (match-beginning 1) (match-end 1) "ƒ") nil))))))
+(defun esk-pretty-fn nil (font-lock-add-keywords nil `(("(\\(fn\\>\\)" (0 (progn (compose-region (match-beginning 1) (match-end 1) ,(make-char 'greek-iso8859-7 107)) nil))))));"ƒ") nil))))))
 
 (add-hook 'clojure-mode-hook 'esk-pretty-fn)
 
