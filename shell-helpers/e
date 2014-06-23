@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [ "$1" == "-t" ]; then
+    emacsclient -e $@
+else
+    emacsclient -c -n $@ >/dev/null
+fi
