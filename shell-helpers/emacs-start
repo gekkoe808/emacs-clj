@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if ! pgrep "[E]macs" >/dev/null ; then
+    /Applications/Emacs.app/Contents/MacOS/Emacs --daemon 2>/dev/null 
+fi
+
+exec /Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c -n $@ &

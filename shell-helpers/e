@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ "$1" == "-t" ]; then
+    /Applications/Emacs.app/Contents/MacOS/bin/emacsclient -e $@
+else
+    /Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c -n $@ >/dev/null
+fi
+
+osascript ~/bin/activate-emacs.scpt

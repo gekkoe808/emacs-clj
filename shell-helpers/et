@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Open emacs in terminal mode and pass in whatever arguments may have
+# been passed.
+/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -t $@
