@@ -9,6 +9,7 @@
 ;; (in lines high) Emacs will have whenever you start it
 
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 187) (height . 60)))
+(setq default-frame-alist '((top . 0) (left . 0) (width . 187) (height . 60)))
 
 
 ;; Place downloaded elisp files in this directory. You'll then be able
